@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<ht lang="en">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -21,9 +21,50 @@
 </head>
 
 <body>
-<?php require("./inc/header.php") ?>
+    <!-- Search Wrapper Area Start -->
+    <div class="search-wrapper section-padding-100">
+        <div class="search-close">
+            <i class="fa fa-close" aria-hidden="true"></i>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search-content">
+                        <form action="#" method="get">
+                            <input type="search" name="search" id="search" placeholder="Type your keyword...">
+                            <button type="submit"><img src="./assets/img/core-img/search.png" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Wrapper Area End -->
 
-        <div class="shop_sidebar_area">
+    <!-- ##### Main Content Wrapper Start ##### -->
+    <div class="main-content-wrapper d-flex clearfix">
+
+        <!-- Mobile Nav (max width 767px)-->
+        <div class="mobile-nav">
+            <!-- Navbar Brand -->
+            <div class="amado-navbar-brand">
+                <a href="index.php"><img src="./assets/img/core-img/logo.png" alt=""></a>
+            </div>
+            <!-- Navbar Toggler -->
+            <div class="amado-navbar-toggler">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <header class="header-area clearfix">
+        <!-- Header Area Start -->
+       <?php include_once('./inc/header.php')?>
+        <!-- Header Area End -->
+         <!-- Header Area Start -->
+       <?php include_once('./inc/sidebar.php')?>
+        <!-- Header Area End -->
+        </header>
+        
+       <div class="shop_sidebar_area">
 
             <!-- ##### Single Widget ##### -->
             <div class="widget catagory mb-50">
@@ -43,7 +84,7 @@
                     </ul>
                 </div>
             </div>
-
+            
             <!-- ##### Single Widget ##### -->
             <div class="widget brands mb-50">
                 <!-- Widget Title -->
@@ -189,7 +230,7 @@
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                     </div>
                                     <div class="cart">
-                                        <a href="cart.php" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="./assets/img/core-img/cart.png" alt=""></a>
+                                        <a href="cart.php" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="img/core-img/cart.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -226,7 +267,7 @@
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                     </div>
                                     <div class="cart">
-                                        <a href="cart.php" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="./assets/img/core-img/cart.png" alt=""></a>
+                                        <a href="cart.php" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="img/core-img/cart.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -263,7 +304,7 @@
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                     </div>
                                     <div class="cart">
-                                        <a href="cart.php" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="./assets/img/core-img/cart.png" alt=""></a>
+                                        <a href="cart.php" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="img/core-img/cart.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -300,7 +341,7 @@
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                     </div>
                                     <div class="cart">
-                                        <a href="cart.php" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="./assets/img/core-img/cart.png" alt=""></a>
+                                        <a href="cart.php" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="img/core-img/cart.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -337,7 +378,7 @@
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                     </div>
                                     <div class="cart">
-                                        <a href="cart.php" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="./assets/img/core-img/cart.png" alt=""></a>
+                                        <a href="cart.php" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="img/core-img/cart.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -374,7 +415,7 @@
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                     </div>
                                     <div class="cart">
-                                        <a href="cart.php" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="./assets/img/core-img/cart.png" alt=""></a>
+                                        <a href="cart.php" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="img/core-img/cart.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -424,8 +465,9 @@
         </div>
     </section>
     <!-- ##### Newsletter Area End ##### -->
-
-    <?php require("./inc/footer.php") ?>
+    <!-- ##### Footer Area Start ##### -->
+   <?php include_once("./inc/footer.php")?>
+    <!-- ##### Footer Area End ##### -->
 
     <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
     <script src="./assets/js/jquery/jquery-2.2.4.min.js"></script>
